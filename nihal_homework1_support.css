@@ -1,0 +1,333 @@
+/* cascading style sheet for homework1.html*/
+body
+{
+
+       background-image: url("8.jpg");
+       background-repeat: no-repeat;
+       background-size: cover; 
+}
+
+label
+{      
+      visibility:;
+      display:none;
+      color: red;
+}
+
+fieldset
+{  
+       width: 400px;
+       height: 550px;
+       overflow: scroll;
+       visibility: none;
+       border-radius: 4px;
+       color: #ffffff;
+}
+
+input[type=text]
+{
+        height:20px;
+    	width:200px;
+    	border-radius:4px; 
+    	box-shadow: 2px 2px 0 #888888;
+    	font-family: Sansation,Arial;
+}
+
+legend
+{
+
+	   font-size:23px;
+}
+
+table,th,td
+{
+        border:1px solid white;
+        color: white;
+}
+
+
+input[type=password]
+{
+
+        height:20px;
+    	width:200px;
+    	border-radius:4px; 
+    	box-shadow: 2px 2px 0 #888888;
+    	font-family: Sansation,Arial;
+
+}
+
+input[type=button]
+{
+	   width: 80px;
+}
+
+h1
+{   
+        height:15px;
+        font-weight:bold;
+        margin-left: 5px;
+        margin-top: 5px;
+    	color: #8A6A4A;
+    	/*color: #B5916C;*/
+    	visibility: none;
+}
+
+h2
+{ 
+        margin-left: 5px;
+    	font-weight:bold; 
+        font-size: 20px;
+        height:20px;
+        color: #ffffff;
+        visibility: none;
+}
+
+h3
+{  
+        position: absolute;
+    	margin-bottom: 10px;
+    	left: 15px;
+    	z-index: 0;
+    	color: #ffffff;
+    	visibility: none;
+}
+
+
+#firstline
+{  
+        height:5px;
+    	font-weight: bolder;
+    	margin-right: 31px;
+        font-size: 22px;
+    	color: #FF3300;
+    	visibility: none;
+}
+
+#secondline
+{
+         margin-right: 15px;
+         font-weight: bolder;
+         font-size: 15px;
+    	 color: #FFFFFF;
+         height:5px;
+         visibility: none;
+
+}
+
+#click1
+{
+    	margin-right: 140px;
+    	visibility: none;
+}
+
+#click2
+{
+	   margin-right: 60px;
+	   visibility: none;
+	
+}
+
+#click3
+{
+	   margin-right: 8px;
+	   visibility: none;
+	
+}
+
+#container1
+{
+         display:block;
+}
+
+
+#container2
+{
+        display:none;
+
+}
+
+#container3
+{
+         display:none;
+}
+
+#container4
+{
+	   display: none;
+}
+
+#extracheckbox
+{
+
+        height: 200px;
+        width: 275px;
+        float:right;
+        position: absolute;
+        top: 275px;
+        left: 15px;
+    	z-index: 1;
+    	margin-left: 0px;
+    	color: #ffffff;
+
+}
+
+#extraimages
+{
+
+        height: 450px;
+        width: 275px;
+        float:right;
+        position: absolute;
+        top: 275px;
+        right: 15px;
+    	z-index: 1;
+    	margin-left: 0px;
+    	color: #ffffff;
+
+}
+
+#overextraimages
+{
+
+        height: 400px;
+        width: 275px;
+        float:right;
+        position: absolute;
+        top: 320px;
+        right: 15px;
+    	z-index: 2;
+    	margin-left: 0px;
+    	/*color: #ffffff;*/
+}
+
+
+
+#footer
+{
+    
+    	font-family:verdana;
+    	font-size:10px;
+    	color:#ffffff;
+}
+
+
+#logo
+{   
+    
+    	margin-left: 5px;
+        height: 80px;
+
+}
+
+#newsletter
+{   
+	
+        float:right;
+        position: absolute;
+        top: 120px;
+        left: 775px;
+    	z-index: 1;
+    	margin-left: 60px;
+
+}
+
+#quote
+{   
+	
+        float:right;
+        position: absolute;
+        top: 80px;
+        left: 525px;
+    	z-index: 1;
+    	margin-left: 60px;
+}
+
+#myTable
+{
+
+        margin-left: 50px;
+   
+}
+
+
+
+#content
+{   
+
+    	height:650px;
+    	width:500px;
+    	margin: auto;
+        visibility: none;
+        
+
+}
+
+#left
+{  
+
+        position: absolute;
+    	left:50px;
+    	top:300px;
+    	height:500px;
+    	width:470px;
+        visibility: none;
+        margin-right: 0px;
+        overflow: scroll;
+        color: #ffffff;
+
+
+}
+#right
+{    
+	
+
+        position:absolute;
+    	top:300px;
+    	left: 540px;
+    	height:500px;
+    	width:470px;
+        visibility: none;
+        /*overflow: scroll;*/
+         color: #ffffff;
+
+}
+
+#welcome
+{
+        height:150px;
+    	/*width:500px;*/
+    	margin: auto;
+        visibility: none;
+        z-index: =0;
+
+}
+
+#report1
+{
+      height:600px;
+   
+
+}
+
+#report2
+{
+    height:1000px;
+}
+
+.transparent
+{
+
+ 
+        background-color:#3A3838;
+        border:1px solid #3A3838;
+        border-radius:4px;
+        opacity:0.6;)
+        filter:alpha(opacity=60;   	
+}
+
+
+
+
+
+

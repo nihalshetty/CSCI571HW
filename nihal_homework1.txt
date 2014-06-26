@@ -1,0 +1,11 @@
+name:Nihal Shetty
+id: nihalgas@usc.edu
+About The Site:
+The Site is a basic Restaurant Site Where it takes your information initially and then tell you to select the food items and finally displays the customer's information as a part of the report.
+1st page: You have to fill in your information as a part of recieving updates in the first form then you proceed to second form.
+2nd page: You have to select the food items then you proceed to the first Report
+1st Report: Displays the user information
+2nd Report: Displays the order details
+
+
+link: 

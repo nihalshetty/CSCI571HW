@@ -1,0 +1,597 @@
+<!----Homework1:Dynamic html ---->
+
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>
+	      homework1.com
+	    </title>
+	    <link rel="stylesheet" type="text/css" href="nihal_homework1_support.css">
+	</head>
+	<body>
+	   <div id="container1"> 
+	          <div id="logo">
+	            <img src="logofinal1.png" alt="bigbanglogo" width="500" height="100" style="margin-left:5px;" />
+	         
+
+	          </div>
+	          <div id="welcome" class="transparent" heigh="150">
+				   <h1 style="margin-top:5px">Welcome to the 13 Restaurant and Lounge Bar</h1>
+	               <h2 style="margin-top:15px">Chic and Contemperory with a modern American menu, the 13  Lounge Bar <br/>&amp; Restaurant is located on the west coast near Santa Monica Beach. </h2>
+	               <h3>"Life is uncertain.<br/>Eat first"&nbsp;-Ernest Ulmer</h3>
+	           <div id="newsletter" align="right">
+	          <p id="firstline">Newsletter Sign Up</p>
+	          <p id="secondline">Get the latest news and offers.</p>
+	          <input id="click1"type="button" value="forward->" onclick=" moveforwardone()" />	
+	          </div>
+	          </div>
+
+	            <br/>
+	            <br/>
+	        
+	           
+	    
+	          <div id="content" class="transparent" align="center" > <br/><br/> <br/>
+	              <form name="information" action="">
+	                  <fieldset>
+	                  <legend> Customer information</legend><br/> <br/>
+	                  	Account Name<br/><input type="text" name="accountname" placeholder="Account Name" size="30" onblur="myaccnamevalid(this)" />
+	                  	<label id="aclabel" class="errorlabels"></label> <br/> <br/>
+		               
+		                Password<br/><input type="password" name="password" placeholder="Password" size="30" onblur="mypasswordvalid(this)" /> 
+		                <label id="passlabel" class="errorlabels"></label><br/> <br/>
+		               
+		                First Name<br/><input type="text" name="firstname" placeholder="First Name" size="30" onblur="myfirstnamevalid(this)"/>
+		                <label id="firstlabel" class="errorlabels"></label> <br/> <br/>
+		               
+		                Last Name<br/><input type="text" name="lastname" placeholder="Last Name" size="30" onblur="mylastnamevalid(this)" />
+		                <label id="lastlabel" class="errorlabels"></label> <br/> <br/>
+		               
+		                E-mail <br/><input type="text" name="email" placeholder="E-mail" size="30" onblur="myemailvalid(this)" /> 
+		                <label id="emaillabel" class="errorlabels"></label><br/> <br/>
+		               
+		                Phone<br/><input type="text" name="phone" placeholder="phone" size="30" onblur="myphonevalid(this)"/>
+		                <label id="phonelabel" class="errorlabels"></label><br/> <br/>
+		       			
+		       			Birthdate<br/>
+		       			  				  <select id="months" name="month">
+			       			  				   <option value="0">Month</option>
+							           		   <option value="01">January</option>
+									           <option value="02">February</option>
+									           <option value="03">March</option>
+									           <option value="04">April</option>
+									           <option value="05">May</option>
+									           <option value="06">June</option>
+									           <option value="07">July</option>
+									           <option value="08">August</option>
+									           <option value="09">September</option>
+									           <option value="10">October</option>
+									           <option value="11">November</option>
+									           <option value="12">December</option>
+							         </select>
+							         <select id="days" name="day">
+												<option value="0">Days</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+												<option value="7">7</option>
+												<option value="8">8</option>
+												<option value="9">9</option>
+												<option value="10">10</option>
+												<option value="11">11</option>
+												<option value="12">12</option>
+												<option value="13">13</option>
+												<option value="14">14</option>
+												<option value="15">15</option>
+												<option value="16">16</option>
+												<option value="17">17</option>
+												<option value="18">18</option>
+												<option value="19">19</option>
+												<option value="20">20</option>
+												<option value="21">21</option>
+												<option value="22">22</option>
+												<option value="23">23</option>
+												<option value="24">24</option>
+												<option value="25">25</option>
+												<option value="26">26</option>
+												<option value="27">27</option>
+												<option value="28">28</option>
+												<option value="29">29</option>
+												<option value="30">30</option>
+												<option value="31">31</option>
+							         </select>
+							         <select id="years"name="year">
+											    <option value="0">Year</option>
+												<option value="2014">2014</option>
+												<option value="2013">2013</option>
+												<option value="2012">2012</option>
+												<option value="2011">2011</option>
+												<option value="2010">2010</option>
+												<option value="2009">2009</option>
+												<option value="2008">2008</option>
+												<option value="2007">2007</option>
+												<option value="2006">2006</option>
+												<option value="2005">2005</option>
+												<option value="2004">2004</option>
+												<option value="2003">2003</option>
+												<option value="2002">2002</option>
+											    <option value="2001">2001</option>
+												<option value="2000">2000</option>
+												<option value="1999">1999</option>
+												<option value="1998">1998</option>
+												<option value="1997">1997</option>
+												<option value="1996">1996</option>
+												<option value="1995">1995</option>
+												<option value="1994">1994</option>
+												<option value="1993">1993</option>
+												<option value="1992">1992</option>
+												<option value="1991">1991</option>
+												<option value="1990">1990</option>
+												<option value="1989">1989</option>
+												<option value="1988">1988</option>
+												<option value="1987">1987</option>
+												<option value="1986">1986</option>
+												<option value="1985">1985</option>
+												<option value="1984">1984</option>
+												<option value="1983">1983</option>
+												<option value="1982">1982</option>
+												<option value="1981">1981</option>
+												<option value="1980">1980</option>
+												<option value="1979">1979</option>
+												<option value="1978">1978</option>
+							         </select>
+							         <label id="birthlabel" class="errorlabels"></label><br/> <br/>
+							
+							Gender<br/><input type="radio" name="sex" value="male"/>&nbsp;male&nbsp;
+							            <input type="radio" name="sex" value="female"/>&nbsp;female&nbsp;
+							            <input type="radio" name="sex" value="other"/>&nbsp;other&nbsp;<br/> <br/>
+							
+							Address<br/><input type="text" name="address" placeholder="Address" size="30" onblur="myaddressvalid(this)" />
+							<label id="addlabel" class="errorlabels"></label><br/> <br/>
+							
+							City<br/><input type="text" name="city" placeholder="City" size="30" onblur="mycityvalid(this)" />
+							<label id="citylabel" class="errolabels"></label><br/> <br/>
+							
+							Zipcode<br/><input type="text" name="zipcode" placeholder="Zipcode" size="30" onblur="myzipcodevalid(this)" />
+							<label id="ziplabel" class="errolabels"></label><br/> <br/> 
+							
+							Country<br/>
+							       <select id="country" name="countries">
+							                	<option value="0">Select</option>
+												<option value="AF">Afghanistan</option>
+												<option value="AX">Åland Islands</option>
+												<option value="AL">Albania</option>
+												<option value="DZ">Algeria</option>
+												<option value="AS">American Samoa</option>
+												<option value="AD">Andorra</option>
+												<option value="AO">Angola</option>
+												<option value="AI">Anguilla</option>
+												<option value="AQ">Antarctica</option>
+												<option value="AG">Antigua and Barbuda</option>
+												<option value="AR">Argentina</option>
+												<option value="AM">Armenia</option>
+												<option value="AW">Aruba</option>
+												<option value="AU">Australia</option>
+												<option value="AT">Austria</option>
+												<option value="AZ">Azerbaijan</option>
+												<option value="BS">Bahamas</option>
+												<option value="BH">Bahrain</option>
+												<option value="BD">Bangladesh</option>
+												<option value="BB">Barbados</option>
+												<option value="BY">Belarus</option>
+												<option value="BE">Belgium</option>
+												<option value="BZ">Belize</option>
+												<option value="BJ">Benin</option>
+												<option value="BM">Bermuda</option>
+												<option value="BT">Bhutan</option>
+												<option value="BO">Bolivia, Plurinational State of</option>
+												<option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+												<option value="BA">Bosnia and Herzegovina</option>
+												<option value="BW">Botswana</option>
+												<option value="BV">Bouvet Island</option>
+												<option value="BR">Brazil</option>
+												<option value="IO">British Indian Ocean Territory</option>
+												<option value="BN">Brunei Darussalam</option>
+												<option value="BG">Bulgaria</option>
+												<option value="BF">Burkina Faso</option>
+												<option value="BI">Burundi</option>
+												<option value="KH">Cambodia</option>
+												<option value="CM">Cameroon</option>
+												<option value="CA">Canada</option>
+												<option value="CV">Cape Verde</option>
+												<option value="KY">Cayman Islands</option>
+												<option value="CF">Central African Republic</option>
+												<option value="TD">Chad</option>
+												<option value="CL">Chile</option>
+												<option value="CN">China</option>
+												<option value="CX">Christmas Island</option>
+												<option value="CC">Cocos (Keeling) Islands</option>
+												<option value="CO">Colombia</option>
+												<option value="KM">Comoros</option>
+												<option value="CG">Congo</option>
+												<option value="CD">Congo, the Democratic Republic of the</option>
+												<option value="CK">Cook Islands</option>
+												<option value="CR">Costa Rica</option>
+												<option value="CI">Côte d'Ivoire</option>
+												<option value="HR">Croatia</option>
+												<option value="CU">Cuba</option>
+												<option value="CW">Curaçao</option>
+												<option value="CY">Cyprus</option>
+												<option value="CZ">Czech Republic</option>
+												<option value="DK">Denmark</option>
+												<option value="DJ">Djibouti</option>
+												<option value="DM">Dominica</option>
+												<option value="DO">Dominican Republic</option>
+												<option value="EC">Ecuador</option>
+												<option value="EG">Egypt</option>
+												<option value="SV">El Salvador</option>
+												<option value="GQ">Equatorial Guinea</option>
+												<option value="ER">Eritrea</option>
+												<option value="EE">Estonia</option>
+												<option value="ET">Ethiopia</option>
+												<option value="FK">Falkland Islands (Malvinas)</option>
+												<option value="FO">Faroe Islands</option>
+												<option value="FJ">Fiji</option>
+												<option value="FI">Finland</option>
+												<option value="FR">France</option>
+												<option value="GF">French Guiana</option>
+												<option value="PF">French Polynesia</option>
+												<option value="TF">French Southern Territories</option>
+												<option value="GA">Gabon</option>
+												<option value="GM">Gambia</option>
+												<option value="GE">Georgia</option>
+												<option value="DE">Germany</option>
+												<option value="GH">Ghana</option>
+												<option value="GI">Gibraltar</option>
+												<option value="GR">Greece</option>
+												<option value="GL">Greenland</option>
+												<option value="GD">Grenada</option>
+												<option value="GP">Guadeloupe</option>
+												<option value="GU">Guam</option>
+												<option value="GT">Guatemala</option>
+												<option value="GG">Guernsey</option>
+												<option value="GN">Guinea</option>
+												<option value="GW">Guinea-Bissau</option>
+												<option value="GY">Guyana</option>
+												<option value="HT">Haiti</option>
+												<option value="HM">Heard Island and McDonald Islands</option>
+												<option value="VA">Holy See (Vatican City State)</option>
+												<option value="HN">Honduras</option>
+												<option value="HK">Hong Kong</option>
+												<option value="HU">Hungary</option>
+												<option value="IS">Iceland</option>
+												<option value="IN">India</option>
+												<option value="ID">Indonesia</option>
+												<option value="IR">Iran, Islamic Republic of</option>
+												<option value="IQ">Iraq</option>
+												<option value="IE">Ireland</option>
+												<option value="IM">Isle of Man</option>
+												<option value="IL">Israel</option>
+												<option value="IT">Italy</option>
+												<option value="JM">Jamaica</option>
+												<option value="JP">Japan</option>
+												<option value="JE">Jersey</option>
+												<option value="JO">Jordan</option>
+												<option value="KZ">Kazakhstan</option>
+												<option value="KE">Kenya</option>
+												<option value="KI">Kiribati</option>
+												<option value="KP">Korea, Democratic People's Republic of</option>
+												<option value="KR">Korea, Republic of</option>
+												<option value="KW">Kuwait</option>
+												<option value="KG">Kyrgyzstan</option>
+												<option value="LA">Lao People's Democratic Republic</option>
+												<option value="LV">Latvia</option>
+												<option value="LB">Lebanon</option>
+												<option value="LS">Lesotho</option>
+												<option value="LR">Liberia</option>
+												<option value="LY">Libya</option>
+												<option value="LI">Liechtenstein</option>
+												<option value="LT">Lithuania</option>
+												<option value="LU">Luxembourg</option>
+												<option value="MO">Macao</option>
+												<option value="MK">Macedonia, the former Yugoslav Republic of</option>
+												<option value="MG">Madagascar</option>
+												<option value="MW">Malawi</option>
+												<option value="MY">Malaysia</option>
+												<option value="MV">Maldives</option>
+												<option value="ML">Mali</option>
+												<option value="MT">Malta</option>
+												<option value="MH">Marshall Islands</option>
+												<option value="MQ">Martinique</option>
+												<option value="MR">Mauritania</option>
+												<option value="MU">Mauritius</option>
+												<option value="YT">Mayotte</option>
+												<option value="MX">Mexico</option>
+												<option value="FM">Micronesia, Federated States of</option>
+												<option value="MD">Moldova, Republic of</option>
+												<option value="MC">Monaco</option>
+												<option value="MN">Mongolia</option>
+												<option value="ME">Montenegro</option>
+												<option value="MS">Montserrat</option>
+												<option value="MA">Morocco</option>
+												<option value="MZ">Mozambique</option>
+												<option value="MM">Myanmar</option>
+												<option value="NA">Namibia</option>
+												<option value="NR">Nauru</option>
+												<option value="NP">Nepal</option>
+												<option value="NL">Netherlands</option>
+												<option value="NC">New Caledonia</option>
+												<option value="NZ">New Zealand</option>
+												<option value="NI">Nicaragua</option>
+												<option value="NE">Niger</option>
+												<option value="NG">Nigeria</option>
+												<option value="NU">Niue</option>
+												<option value="NF">Norfolk Island</option>
+												<option value="MP">Northern Mariana Islands</option>
+												<option value="NO">Norway</option>
+												<option value="OM">Oman</option>
+												<option value="PK">Pakistan</option>
+												<option value="PW">Palau</option>
+												<option value="PS">Palestinian Territory, Occupied</option>
+												<option value="PA">Panama</option>
+												<option value="PG">Papua New Guinea</option>
+												<option value="PY">Paraguay</option>
+												<option value="PE">Peru</option>
+												<option value="PH">Philippines</option>
+												<option value="PN">Pitcairn</option>
+												<option value="PL">Poland</option>
+												<option value="PT">Portugal</option>
+												<option value="PR">Puerto Rico</option>
+												<option value="QA">Qatar</option>
+												<option value="RE">Réunion</option>
+												<option value="RO">Romania</option>
+												<option value="RU">Russian Federation</option>
+												<option value="RW">Rwanda</option>
+												<option value="BL">Saint Barthélemy</option>
+												<option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+												<option value="KN">Saint Kitts and Nevis</option>
+												<option value="LC">Saint Lucia</option>
+												<option value="MF">Saint Martin (French part)</option>
+												<option value="PM">Saint Pierre and Miquelon</option>
+												<option value="VC">Saint Vincent and the Grenadines</option>
+												<option value="WS">Samoa</option>
+												<option value="SM">San Marino</option>
+												<option value="ST">Sao Tome and Principe</option>
+												<option value="SA">Saudi Arabia</option>
+												<option value="SN">Senegal</option>
+												<option value="RS">Serbia</option>
+												<option value="SC">Seychelles</option>
+												<option value="SL">Sierra Leone</option>
+												<option value="SG">Singapore</option>
+												<option value="SX">Sint Maarten (Dutch part)</option>
+												<option value="SK">Slovakia</option>
+												<option value="SI">Slovenia</option>
+												<option value="SB">Solomon Islands</option>
+												<option value="SO">Somalia</option>
+												<option value="ZA">South Africa</option>
+												<option value="GS">South Georgia and the South Sandwich Islands</option>
+												<option value="SS">South Sudan</option>
+												<option value="ES">Spain</option>
+												<option value="LK">Sri Lanka</option>
+												<option value="SD">Sudan</option>
+												<option value="SR">Suriname</option>
+												<option value="SJ">Svalbard and Jan Mayen</option>
+												<option value="SZ">Swaziland</option>
+												<option value="SE">Sweden</option>
+												<option value="CH">Switzerland</option>
+												<option value="SY">Syrian Arab Republic</option>
+												<option value="TW">Taiwan, Province of China</option>
+												<option value="TJ">Tajikistan</option>
+												<option value="TZ">Tanzania, United Republic of</option>
+												<option value="TH">Thailand</option>
+												<option value="TL">Timor-Leste</option>
+												<option value="TG">Togo</option>
+												<option value="TK">Tokelau</option>
+												<option value="TO">Tonga</option>
+												<option value="TT">Trinidad and Tobago</option>
+												<option value="TN">Tunisia</option>
+												<option value="TR">Turkey</option>
+												<option value="TM">Turkmenistan</option>
+												<option value="TC">Turks and Caicos Islands</option>
+												<option value="TV">Tuvalu</option>
+												<option value="UG">Uganda</option>
+												<option value="UA">Ukraine</option>
+												<option value="AE">United Arab Emirates</option>
+												<option value="GB">United Kingdom</option>
+												<option value="US">United States</option>
+												<option value="UM">United States Minor Outlying Islands</option>
+												<option value="UY">Uruguay</option>
+												<option value="UZ">Uzbekistan</option>
+												<option value="VU">Vanuatu</option>
+												<option value="VE">Venezuela, Bolivarian Republic of</option>
+												<option value="VN">Viet Nam</option>
+												<option value="VG">Virgin Islands, British</option>
+												<option value="VI">Virgin Islands, U.S.</option>
+												<option value="WF">Wallis and Futuna</option>
+												<option value="EH">Western Sahara</option>
+												<option value="YE">Yemen</option>
+												<option value="ZM">Zambia</option>
+												<option value="ZW">Zimbabwe</option>
+									    </select>
+									    <label id="countrylabel" class="errorlabels"><br/><br/>
+							           <!--  <input type="button"  value="Proceed to Order" onclick="validatebirth()"/>  -->                  
+	                 </fieldset>	  
+	          </form>
+	          </div>
+	          <div id="extracheckbox" class="transparent">
+	          	   <form name="extras" action="">
+	          	   <br/>
+	          	   &nbsp;
+	          	   How&nbsp;Did&nbsp;You&nbsp;Hear&nbsp;About&nbsp;Us?
+	          	   <br/>
+	          	   &nbsp;<input type="checkbox" name="hear" value="friends"/>&nbsp;Friends<br/>
+	               &nbsp;<input type="checkbox" name="hear" value="internet"/>&nbsp;Internet<br/>
+	               &nbsp;<input type="checkbox" name="hear" value="foodmag"/>&nbsp;Food Magazine<br/><br/>
+	               &nbsp;How&nbsp; Often&nbsp; Do&nbsp; You&nbsp; Want&nbsp; Our&nbsp; News?
+	               <br/>
+	               &nbsp;<input type="checkbox" name="offer" value="daily"/>&nbsp;Daily<br/>
+	               &nbsp;<input type="checkbox" name="offer" value="weekly"/>&nbsp;Weekly<br/>
+	               &nbsp;<input type="checkbox" name="offer" value="month"/>&nbsp;Once in a Month.<br/>
+	          </form>
+	          </div>
+	          <div id="extraimages" class="transparent"> 
+	          <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check Out Our Place & Food!
+	          </div>
+	          <div id="overextraimages">
+	          &nbsp;&nbsp;&nbsp;<img src="2.jpg" alt="bigbanglogo" width="225" height="100" style="margin-left:5px;opacity:1;border:3px solid white;border-radius:4px;" /><br/><br/>
+			  &nbsp;&nbsp;&nbsp;<img src="1.jpg" alt="bigbanglogo" width="225" height="100" style="margin-left:5px;opacity:1;border:3px solid white; border-radius:4px; " /><br/><br/>
+			  &nbsp;&nbsp;&nbsp;<img src="3.jpg" alt="bigbanglogo" width="225" height="100" style="margin-left:5px;opacity:1;border:3px solid white; border-radius:4px; " />
+			        </div>
+	          <div id="footer"  >
+	          	Private Policy. Copy Right &copy; 2014, 13 Restaurant &amp; Lounge Bar. All Rights Reserved.
+	          </div>
+	   </div>
+	   
+	   <div id="container2">
+			   <div id="logo">
+			          <img src="logofinal1.png" alt="bigbanglogo" width="500" height="100" style="margin-left:5px;" />      
+			   </div>
+			   
+			   <div id="welcome" class="transparent" heigh="150">
+					   
+					   <h1 style="margin-top:5px">Place you Order. Right Away!</h1>
+		               <h2 style="margin-top:15px">Thank you for registering with the 13  Lounge Bar &amp;<br/> Restaurant, to receive all the latest offers and updates. </h2>
+		               <h3>"There is no Love sincerer<br/> than Love of <span style="color:red;font-size:20px;">Food</span>"&nbsp;-Anonymous</h3>
+		            <div id="quote" align="right">
+			          <p id="firstline" style="font-size:30px"> "One cannot think sleep love well </p>
+			          <p id="firstline"style="font-size:30px" >if one has not <span style="color:#FFFFFF;">dined</span>well"<br/>-Virginia Wolf</p>
+			          <br/>
+			          <br/>
+		              <input id="click2" type="button" value="back <-" onclick="movebacksecond()"/>
+		              <input id="click3" type="button" value="forward->" onclick="moveforwardtwo()"/>	
+		            </div>
+		       </div>
+
+		            <br/>
+		            <br/>
+		        
+		        <div id="left" class="transparent">
+		        <form  name="foodopt" action="">
+		                <br/>
+				        &nbsp;
+				        Food<br/><br/>&nbsp;<input type="radio" name="food" value="appetizer" onclick="dynamicfood()" />&nbsp;Appetizer&nbsp;
+				                 <input type="radio" name="food" value="pasta" onclick="dynamicfood()"/>&nbsp;Pasta&nbsp;
+				                 <input type="radio"  name="food" value="burgersandwiches" onclick="dynamicfood()"/>&nbsp;Burger &amp; Sandwiches&nbsp;
+				                 <input type="radio" name="food" value="dessert" onclick="dynamicfood()"/>&nbsp;Dessert&nbsp;
+				        <hr/>          
+				        <br/>
+				        &nbsp;
+				        Food-Spicy<br/><br/>&nbsp;<input type="radio" name="spicy" value="very">&nbsp;Very&nbsp;Spicy&nbsp;         	
+	                                   <input type="radio" name="spicy" value="medium">&nbsp;Medium&nbsp;Spicy&nbsp;
+	                                   <input type="radio" name="spicy" value="notspicy">&nbsp;Not&nbsp;Spicy&nbsp;at&nbsp;all
+	                    <hr/> 
+	                    <br/>
+	                    &nbsp;
+	                    Side(extra-charge)<br/><br/>&nbsp;<input type="checkbox" name="side" value="fries">&nbsp;Fries&nbsp;<br/>
+	                                                &nbsp;<input type="checkbox" name="side" value="onion">&nbsp;onion&nbsp;string<br/>
+	                                                &nbsp;<input type="checkbox" name="side" value="garden">&nbsp;Garden&nbsp;Salad
+	                    <hr/> 
+	                    <br/>
+	                    &nbsp;
+	                    Add-on(extra-charge)<br/><br/>&nbsp;<input type="checkbox" name="addon" value="cheese">&nbsp;Cheese&nbsp;<br/>
+	                    							  &nbsp;<input type="checkbox" name="addon" value="avocado">&nbsp;Avocado&nbsp;<br/>
+	                    							  &nbsp;<input type="checkbox" name="addon" value="Guacamole">&nbsp;Guacamole&nbsp;
+
+	                    <hr/> 
+	                    <br/>
+	                    &nbsp;
+	                    Drinks<br/><br/>&nbsp;<input type="radio" name="drink" value="soda" onclick="dynamicdrink()"/>&nbsp;Soda&nbsp;
+				                 <input type="radio" name="drink"value="cocktail" onclick="dynamicdrink()"/>&nbsp;Cocktail&nbsp;
+				                 <input type="radio"  name="drink" value="mocktail" onclick="dynamicdrink()"/>&nbsp;Mocktail&nbsp;
+				                 <input type="radio" name="drink" value="wine" onclick="dynamicdrink()"/>&nbsp;Wine&nbsp;
+				        <hr/> 
+				        <br/>
+				        &nbsp;
+				        Do you have any special message for our chef?(i.e allergies)<br/><br/>
+				        &nbsp;<textarea  name="specialmsg" rows="5" cols="50" style="color:red;"></textarea>
+				        <hr/> 
+				        <br/>
+				        &nbsp; 
+				        Were&nbsp;you&nbsp;Satisfied&nbsp;with&nbsp;what&nbsp;we&nbsp;had&nbsp;to&nbsp;offer?<br/><br/>
+							        &nbsp;<input type="radio" name="rate" value="one"/>&nbsp;1&nbsp;
+							        &nbsp;<input type="radio" name="rate" value="two"/>&nbsp;2&nbsp;
+							        &nbsp;<input type="radio" name="rate" value="three"/>&nbsp;3&nbsp;
+							        &nbsp;<input type="radio" name="rate" value="four"/>&nbsp;4&nbsp; 
+							        &nbsp;<input type="radio" name="rate" value="five"/>&nbsp;5&nbsp;       
+
+	            </form> 
+		        </div><br/>
+		        <div id="right" class="transparent"> 
+		        <form name="foodsel" action="">
+	            <br/>
+	            &nbsp;
+	            <select id="appetizer" name="appet" width="20px" multiple>
+	                  <option  id="1" name="options1" value="app" onclick="detailappetizer()">Appetizer</option>
+	            	  <option  id="2" name="options1" value="hummus" onclick="detailappetizer()">Hummus Pita &amp; Veggie</option>
+	            	  <option  id="3" name="options1" value="party" onclick="detailappetizer()">Party Wings</option>
+	            	  <option  id="4" name="options1" value="chick" onclick="detailappetizer()">Chicken Fingers</option>
+	            	  <option  id="5" name="options1" value="chili" onclick="detailappetizer()">Chili Cheese Fries</option> 
+	            </select>
+	            <br/>
+				<br/>
+				&nbsp; 
+	            Details
+				<br/>
+				&nbsp; 
+	            <textarea id="foodtext" rows="10" cols="50" style="color:red;"></textarea>
+	            <br/>
+	            <br/>
+	           
+	            
+	            <hr/>
+	            <br/>
+	            
+	            &nbsp;
+	            <select id="soda" name="sod" multiple> 
+	                 <option name="options2" value="soda">Soda</option>
+	                 <option name="options2" value="Coke">Coke</option>
+	                 <option name="options2" value="Pepsi">Pepsi</option>
+	                 <option name="options2" value="Cokez">Coke&nbsp;Zero</option>
+	                 <option name="options2" value="Miranda">Miranda</option>
+	            </select>
+	            <br/>
+	            <br/>
+				&nbsp; 
+	            Details
+				<br/>
+				&nbsp; 
+	            <textarea  id="drinktext" rows="5" cols="50" style="color:red;"></textarea>
+		        </form>
+		        </div>
+		        <!--  <div id="footer"  >
+	          	Private Policy. Copy Right &copy; 2014, BigBang Restaurant &amp; Lounge Bar. All Rights Reserved.
+	           </div> -->
+	   </div>
+	   
+	   <div id="container3">
+	         <div id="report1" class="transparent">
+	              <br/>
+	              &nbsp;
+	              <table id="myTable">
+						<tr>
+						<th>Account Name &amp; Password &nbsp;</th>
+						<th>Name &nbsp;&nbsp;</th>
+						<th>Email &nbsp;&nbsp;</th>
+						<th>Phone&nbsp;&nbsp;&nbsp;</th>
+						<th>Birthdate&nbsp;&nbsp;&nbsp;</th>
+						<th>Gender&nbsp;&nbsp;&nbsp;</th>
+						<th>Address&nbsp;&nbsp;&nbsp;</th>
+						<th>Source &amp; Notification&nbsp;&nbsp;&nbsp;</th>
+						<th>Order&nbsp;Details</th>
+						</tr>
+
+					   </table><br>
+	         </div>	
+	   </div>
+	   
+	   <div id="container4">
+	        <div id="report2" class="transparent">
+	        </div>
+	   </div>
+	   
+	   <script type="text/javascript" src="nihal_homework1_script.js"></script>
+	</body>
+</html>
